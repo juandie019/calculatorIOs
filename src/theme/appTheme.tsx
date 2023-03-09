@@ -20,19 +20,11 @@ export const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'right',
     },
-    boton: {
-        height: 80,
-        width: 80,
-        borderRadius: 100,
-        backgroundColor: '#333333',
+    fila: {
+        flexDirection: 'row',
         justifyContent: 'center',
-    },
-    botonTexto: {
-        textAlign: 'center',
-        padding: 10,
-         fontSize: 30,
-        color: 'white',
-        fontWeight: '300',
+        marginBottom: 18,
+        paddingHorizontal: 10,
     },
 });
 
