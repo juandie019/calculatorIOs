@@ -5,12 +5,15 @@ interface Props {
     texto: String,
     color?: String,
     ancho?: boolean,
+		accion: ( numeroTexto: string ) => void,
 }
 const mainColorButton = '#2D2D2D';
 
-export const BotonCalc = ({ texto, color = mainColorButton, ancho = false } : Props) => {
+export const BotonCalc = ({ texto, color = mainColorButton, ancho = false, accion } : Props) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+			onPress={ () => accion( texto ) }
+		>
         <View style={{
             ...styles.boton,
             backgroundColor: color,
